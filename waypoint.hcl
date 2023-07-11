@@ -14,7 +14,7 @@ app "go-k8s" {
     registry {
       use "docker" {
         # Replace with your docker image name (i.e. registry.hub.docker.com/library/go-k8s)
-        image = "test"
+        image = "go-k8s"
       }
     }
   }
