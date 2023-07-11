@@ -55,3 +55,18 @@ variable "cloudsql" {
   description = "postgres connection"
 }
 
+variable "registry_username" {
+  type = string
+  default = ""
+  env = ["REGISTRY_USERNAME"]
+}
+
+variable "registry_password" {
+  type = string
+  sensitive = true
+  default = ""
+  env = ["REGISTRY_PASSWORD"]
+}
+
+
+
